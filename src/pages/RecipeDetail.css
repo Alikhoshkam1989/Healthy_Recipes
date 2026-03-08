@@ -1,0 +1,160 @@
+.recipe-detail-container {
+  padding: 4rem 1.5rem;
+}
+
+.recipe-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.recipe-image-wrap {
+  border-radius: 2rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.recipe-image-wrap img {
+  width: 100%;
+  border-radius: 1.5rem;
+  display: block;
+}
+
+.recipe-intro h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.recipe-meta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.diet-badges {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+}
+
+.badge.highlight {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.save-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.save-btn.favorited {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  cursor: default;
+}
+
+.recipe-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+  padding: 2.5rem;
+}
+
+.recipe-content h2 {
+  margin-bottom: 2rem;
+}
+
+.ingredients ul {
+  list-style: none;
+}
+
+.ingredients li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.ingredients li strong {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+.instructions div {
+  line-height: 1.8;
+}
+
+.instructions p {
+  margin-bottom: 1rem;
+}
+
+.nutrition {
+  grid-column: 1 / -1;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.nut-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.nut-name {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.nut-amount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.reviews-section {
+  padding: 3rem;
+}
+
+.review-form textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  color: white;
+  min-height: 120px;
+}
+
+@media (max-width: 900px) {
+
+  .recipe-header,
+  .recipe-content {
+    grid-template-columns: 1fr;
+  }
+}

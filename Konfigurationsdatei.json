@@ -1,0 +1,211 @@
+{
+  "collections": [
+    {
+      "name": "favorieten",
+      "fields": [
+        {
+          "name": "id",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "receptId",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "receptTitel",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "afbeeldingUrl",
+          "type": "string"
+        },
+        {
+          "name": "gebruikerId",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "permissions": {
+        "GET": [
+          "anonymous",
+          "gebruiker",
+          "admin"
+        ],
+        "POST": [
+          "gebruiker",
+          "admin"
+        ],
+        "PUT": [
+          "gebruiker",
+          "admin"
+        ],
+        "DELETE": [
+          "gebruiker",
+          "admin"
+        ]
+      }
+    },
+    {
+      "name": "recensies",
+      "fields": [
+        {
+          "name": "id",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "receptId",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "beoordeling",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "opmerking",
+          "type": "string"
+        },
+        {
+          "name": "gebruikerId",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "aangemaaktOp",
+          "type": "string"
+        }
+      ],
+      "permissions": {
+        "GET": [
+          "anonymous",
+          "gebruiker",
+          "admin"
+        ],
+        "POST": [
+          "gebruiker",
+          "admin"
+        ],
+        "PUT": [
+          "gebruiker",
+          "admin"
+        ],
+        "DELETE": [
+          "gebruiker",
+          "admin"
+        ]
+      }
+    },
+    {
+      "name": "community_recepten",
+      "fields": [
+        {
+          "name": "id",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "titel",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "beschrijving",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "ingredienten",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "instructies",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "bereidingstijd",
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "afbeeldingUrl",
+          "type": "string"
+        },
+        {
+          "name": "gebruikerId",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "gebruikerNaam",
+          "type": "string"
+        }
+      ],
+      "permissions": {
+        "GET": [
+          "anonymous",
+          "gebruiker",
+          "admin"
+        ],
+        "POST": [
+          "gebruiker",
+          "admin"
+        ],
+        "PUT": [
+          "gebruiker",
+          "admin"
+        ],
+        "DELETE": [
+          "gebruiker",
+          "admin"
+        ]
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@receptapp.nl",
+      "password": "Admin123!",
+      "roles": [
+        "admin"
+      ]
+    },
+    {
+      "id": 2,
+      "email": "ali@example.com",
+      "password": "Ali123!",
+      "roles": [
+        "gebruiker"
+      ]
+    }
+  ],
+  "data": {
+    "favorieten": [
+      {
+        "id": 1,
+        "receptId": "716429",
+        "receptTitel": "Pasta met knoflook, lente-ui, bloemkool en broodkruimels",
+        "afbeeldingUrl": "https://spoonacular.com/recipeImages/716429-312x231.jpg",
+        "gebruikerId": "ali"
+      }
+    ],
+    "recensies": [
+      {
+        "id": 1,
+        "receptId": "716429",
+        "beoordeling": 4.5,
+        "opmerking": "Erg lekker en eenvoudig te bereiden!",
+        "gebruikerId": "ali",
+        "aangemaaktOp": "2026-01-20"
+      }
+    ],
+    "community_recepten": []
+  }
+}

@@ -1,0 +1,74 @@
+.favorites-container {
+  padding: 4rem 1.5rem;
+}
+
+.favorites-container h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.favorites-container .subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 4rem;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.fav-card .card-image {
+  cursor: pointer;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.btn-view {
+  flex: 1;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: white;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.btn-view:hover {
+  background: var(--glass-border);
+}
+
+.btn-remove {
+  background: transparent;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.btn-remove:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.no-favorites {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 6rem;
+}
+
+.no-favorites h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.no-favorites p {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}

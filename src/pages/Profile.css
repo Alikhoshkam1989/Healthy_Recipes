@@ -1,0 +1,111 @@
+.profile-container {
+  padding: 4rem 1.5rem;
+  max-width: 800px !important;
+}
+
+.profile-header {
+  padding: 4rem;
+  text-align: center;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 50%;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+}
+
+.btn-logout-alt {
+  margin-top: 2rem;
+  background: transparent;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.profile-details {
+  padding: 3rem;
+}
+
+.profile-details h2 {
+  margin-bottom: 2.5rem;
+}
+
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 1rem;
+}
+
+/* Switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--glass-border);
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: var(--primary);
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

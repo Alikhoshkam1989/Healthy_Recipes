@@ -1,0 +1,77 @@
+.recipes-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  padding: 2rem 1.5rem;
+}
+
+.sidebar {
+  padding: 2rem;
+  height: fit-content;
+  position: sticky;
+  top: 6.5rem;
+}
+
+.sidebar h3 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.filter-group select option {
+  background: var(--bg-color);
+}
+
+.apply-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.results-title {
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-muted);
+}
+
+.loader {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+@media (max-width: 992px) {
+  .recipes-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+}
